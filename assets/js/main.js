@@ -65,6 +65,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
+  
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -88,6 +89,21 @@
     });
   }
   window.addEventListener('load', aosInit);
+
+  /**
+   * WhatsApp top button
+   */
+  let wspBtn = document.querySelector('.btn-wsp');
+
+  function toggleScrollTop() {
+  if (scrollTop) {
+    window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+  }
+  if (wspBtn) {
+    window.scrollY > 100 ? wspBtn.classList.add('active') : wspBtn.classList.remove('active');
+  }
+}
+
 
   /**
    * Init typed.js

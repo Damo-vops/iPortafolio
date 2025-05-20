@@ -453,6 +453,35 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# WhatsApp  Button
+--------------------------------------------------------------*/
+.btn-wsp {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 75px;
+  z-index: 99999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: #0df053;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+.btn-wsp.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 75px;
+}
+
+
+/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
